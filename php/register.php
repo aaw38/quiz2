@@ -13,7 +13,7 @@
       <?php
         $firstname = $_POST["firstname"];
         $email = $_POST["email"];
-        setcookie("registered", $firstname . "~" . $email);
+        setcookie("registered", $firstname . "<" . $email);
   	  echo '<h1>Welcome to the math club!</h1>';
       echo '<p>Hi, ' . $firstname . '! You recently registered with the email address ' . $email . '.</p>';
       ?>

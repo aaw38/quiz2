@@ -15,11 +15,10 @@
         if (isset($_COOKIE["registered"]))
         {
             $mycookie = $_COOKIE["registered"];
-            $stringarr = split("~", $mycookie);
+            $stringarr = split("<", $mycookie);
             $firstname = $stringarr[0];
             $email = $stringarr[1];
-            setcookie("registered", $firstname . "~" . $email);
-             echo '<p>Hi, ' . $firstname . '! You recently registered with the email address ' . $email . '.</p>';
+            echo '<p>Hi, ' . $firstname . '! You recently registered with the email address ' . $email . '.</p>';
         }
         else
         {
